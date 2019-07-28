@@ -5,9 +5,9 @@ choices = ["r","p","s"]
 def tie():
     print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + " which results in a tie!")
 def p1_wins():
-    print(p2_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", Player 1 wins!")
+    print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", " + p1_name + " wins!")
 def p2_wins():
-    print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", Player 2 wins!")
+    print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", " + p1_name + " wins!")
 
 print("Input your name Player 1")
 p1_name = str.title(input())
