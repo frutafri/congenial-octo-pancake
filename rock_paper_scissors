@@ -7,7 +7,7 @@ def tie():
 def p1_wins():
     print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", " + p1_name + " wins!")
 def p2_wins():
-    print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", " + p1_name + " wins!")
+    print(p1_name + " played " + p1_move + " and " + p2_name + " played " + p2_move + ", " + p2_name + " wins!")
 
 print("Input your name Player 1")
 p1_name = str.title(input())
@@ -17,7 +17,7 @@ p2_name = str.title(input())
 #Players pick their move:
 
 while True:
-    print("1... 2... 3... shoot!")
+    print(p1_name + ", 1... 2... 3... shoot!")
     while True:
         print("Pick one: r/p/s?")
         p1_move = input()
@@ -29,6 +29,7 @@ while True:
             break
 
     while True:
+        print(p2_name + ", 1... 2... 3... shoot!")
         print("Pick one: r/p/s?")
         p2_move = input()
         if p2_move not in choices:
