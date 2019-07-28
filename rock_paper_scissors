@@ -1,0 +1,61 @@
+r = "rock"
+p = "paper"
+s = "scissors"
+
+def tie():
+    print("Player 1 played " + p1_move + " and player 2 played " + p2_move + " which results in a tie!")
+def p1_wins():
+    print("Player 1 played " + p1_move + " and player 2 played " + p2_move + ", Player 1 wins!")
+def p2_wins():
+    print("Player 1 played " + p1_move + " and player 2 played " + p2_move + ", Player 2 wins!")
+
+#Players pick their move:
+
+while True:
+    while True:
+        print("Rock, paper, or scissors?")
+        p1_move = input()
+        if p1_move != r and p1_move != p and p1_move != s:
+            continue
+        else:
+            break
+    while True:
+        print("Rock, paper, or scissors?")
+        p2_move = input()
+        if p2_move != r and p2_move != p and p2_move != s:
+            continue
+        else:
+            break
+
+#Game decides who won:
+
+    #If Player 1 chooses rock:
+    if p1_move == r and p2_move == r:
+        tie()
+        continue
+    if p1_move == r and p2_move == p:
+        p2_wins()
+        continue
+    if p1_move == r and p2_move == s:
+        p1_wins()
+        continue
+    #If Player 1 chooses paper
+    if p1_move == p and p2_move == p:
+        tie()
+        continue
+    if p1_move == p and p2_move == r:
+        p1_wins()
+        continue
+    if p1_move == p and p2_move == s:
+        p2_wins()
+        continue
+    #If Player 1 chooses scissors
+    if p1_move == s and p2_move == s:
+        tie()
+        continue
+    if p1_move == s and p2_move == r:
+        p2_wins()
+        continue
+    if p1_move == s and p2_move == p:
+        p1_wins()
+        continue
