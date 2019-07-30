@@ -34,7 +34,7 @@ def match_check():
     if match(board["tr"],board["mm"],board["tr"]):
         return True
 
-#Illustrates board during the game
+#Illustrates board during the game:
     
 def print_board(board):
     print(board["tl"] + "|" + board["tm"] + "|" + board["tr"])
@@ -43,7 +43,7 @@ def print_board(board):
     print("-+-+-")
     print(board["bl"] + "|" + board["bm"] + "|" + board["br"])
 
-#Player input and calls for a match check
+#Player input and calls for a match check:
 
 while not winner:
     print("Player " + turn + " take your turn!")
