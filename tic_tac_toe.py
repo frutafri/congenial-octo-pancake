@@ -2,20 +2,21 @@ board = {"tl": " ", "tm": " ", "tr": " ",
          "ml": " ", "mm": " ", "mr": " ",
          "bl": " ", "bm": " ", "br": " "}
 board_options = list(board.keys())
-board_values = list(board.values())
 
-tl = board_values[0]
-tm = board_values[1]
-tr = board_values[2]
-ml = board_values[3]
-mm = board_values[4]
-mr = board_values[5]
-bl = board_values[6]
-bm = board_values[7]
-br = board_values[8]
+tl = board["tl"]
+tm = board["tm"]
+tr = board["tr"]
+ml = board["ml"]
+mm = board["mm"]
+mr = board["mr"]
+bl = board["bl"]
+bm = board["bm"]
+br = board["br"]
 
 def match(a,b,c):
-    if a == b:
+    if a == b and b == c:
+        if a != " " and b != " " and c != " ":
+            return True
     else:
         return False
        
